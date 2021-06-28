@@ -1,0 +1,13 @@
+# Ignore all
+*
+
+# Unignore all with extensions
+!*.*
+!Dockerfile
+
+# Unignore all dirs
+!*/
+
+# Ignore
+.DS_Store
+.idea
