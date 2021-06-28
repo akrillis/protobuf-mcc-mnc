@@ -1,0 +1,15 @@
+syntax = "proto3";
+package mcc_mnc;
+
+option go_package = "github.com/akrillis/protobuf-mcc-mnc;protobuf_mcc_mnc";
+
+import "google/protobuf/empty.proto";
+
+service Loader {
+    rpc ImsiLoad (stream ImsiData) returns (google.protobuf.Empty) {}
+}
+
+message ImsiData {
+    string Gt   = 1;
+    string Imsi = 2;
+}
